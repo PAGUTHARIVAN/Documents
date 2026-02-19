@@ -3,12 +3,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style1.css">
-    <title>Pagu web project</title>
+    <title>Project1</title>
 </head>
 <body>
-    <h1>PAGU CODES</h1>
-    <a href="https://freecodecamp.org" target="_blank">Visit freeCodeCamp</a>
+    <header>
+        <h1>PAGU Project</h1>
+        <hr>
+        <h2>My First HTML(HyperText Markup Language)</h2>
+        <p>Hello, Everyone! This my first HTML Project and it is helping to increase my coding performance and creates the innovation spark in me. Of course i have interested in Python/Java Full stack development. So the HTML Projects that helps to motivate me for Fullstack development.</p>
+
+        <nav>
+            <ul>
+                <li><strong>About</strong></li>
+                <li><strong>Articles</strong></li>
+                <li><strong>Forms</strong></li>
+                <li><strong>Tables</strong></li>
+                <li><strong>Media</strong></li>
+                <li><strong>Contact</strong></li>
+                <li><strong>Useful Links</strong></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+    
+    <main>
+        <section>
+            <h2>About</h2>
+            <h3>Small Introduction About this Project:</h3>
+            <p>This is a Project that examines and explains the my first HTML(Hypertext Markup Language) project. Basically since my childhood i have been interested in systems and gadgets like(e.g Computers, Laptops, Phones...).</p>
+        
+            <p>HTML(Hypertext Markup Language) is important for the Website and Front end development.</p>
+        </section>
+        <hr>
+        <section>
+            <articles>
+                <h2>Articles</h2>
+                <h3>Articles About the HTML:</h3>
+                <p>In 1980, the physicist Tim Berners-Lee, a contractor at CERN, proposed and prototyped ENQUIRE, a system for CERN researchers to use and share documents. In 1989, Berners-Lee wrote a memo proposing an Internet-based hypertext system.</p>
+                
+                <p>Berners-Lee specified HTML and wrote the browser and server software in late 1990. That year, Berners-Lee and CERN data systems engineer Robert Cailliau collaborated on a joint request for funding, but the project was not formally adopted by CERN. In his personal notes of 1990, Berners-Lee listed "some of the many areas in which hypertext is used"; an encyclopedia is the first entry.</p>
+
+                <p>The first publicly available description of HTML was a document called "HTML Tags",[6] first mentioned on the Internet by Tim Berners-Lee in late 1991.[7][8] It describes 18 elements comprising the initial, relatively simple design of HTML. Except for the hyperlink tag, these were strongly influenced by CERN SGML, an in-house Standard Generalized Markup Language (SGML)-based documentation format at CERN.</p>
+            </articles>
+        </section>
+        <hr>
+        <section>
+            <form>
+                <h2>Forms</h2>
+                <h3>Forms of HTML(Hypertext Markup Language):</h3>
+                <p>HTML forms are
+used to collect user input and send it to a server for processing. They are defined by the <form> element, which acts as a container for various interactive controls like text fields, checkboxes, and buttons</p>
+                
+                <fieldset>
+                    <legend>
+                        PAGU Forms:
+                    </legend>
+
+                    <label for="name" role="name-of-user" aria-label="name-of-the-user">Full Name(Required):</label>
+                    <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+
+                    <label for="number" role="cell-number" aria-label="number-of-the-user">Cell Number(Required):</label>
+                    <input type="number" id="number" name="number" placeholder="Enter Your Number" required>
+                    
+                    <label for="email" role="email-of-the-user" aria-label="email-of-the-user">Email ID(Required):</label>
+                    <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+                     
+                    <label for="number-one" role="acc-no" aria-label="acc-no-user">Account Number(Required):</label>
+                    <input type="number" id="number-one" name="number-one" placeholder="Enter Your Account Number" required>
+                     
+                    <label for="age" role="age-of-the-user" aria-label="age-of-the-user">Age(Required):</label>
+                    <input type="number" id="age" name="age" placeholder="Enter Your Age" min="18" max="80">
+                    
+                    <label for="yes" role="for-yes">Yes:</label>
+                    <input type="radio" id="yes" name="yes" required>
+                    
+                    <label for="no" role="for-no">No:</label>
+                    <input type="radio" id="no" name="no" required>
+                    
+                    <label for="pass" role="checkbox-for-pass">Pass:</label>
+                    <input type="checkbox" id="pass" name="pass">
+                    
+                    <label for="fail" role="checkbox-for-fail">Fail:</label>
+                    <input type="checkbox" id="fail" name="fail">
+
+                    <button type="submit">Submit Form</button>
+                    <button type="reset">Reset Form</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <section>
+            <h1>Tables</h1>
+            <h2>HTML(Hypertext Markup Language) Tabels:</h2>
+            <p>HTML tables are
+used to organize data into rows and columns. They are defined using the primary <table> tag and structured with nested elements like <tr> (table rows), <th> (table headers), and <td> (table data cells).</p>
+
+            <table>
+                <caption>HTML Table</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">S.No</th>
+                        <th scope="col">Programming Languages</th>
+                        <th scope="col">Learning Curve</th>
+                        <th scope="col">speed</th>
+                        <th scope="col">Requirements</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1.</th>
+                        <th scope="row">Python</th>
+                        <td>Fast</td>
+                        <td>Low</td>
+                        <td>Normal requirements is enough</td>
+                    </tr>
+
+                    <tr>
+                        <th>2.</th>
+                        <th>Java</th>
+                        <td>Medium-High</td>
+                        <td>Very fast</td>
+                        <td>Lightly High</td>
+                    </tr>
+
+                    <tr>
+                        <th>3.</th>
+                        <th>Rust</th>
+                        <td>Hard</td>
+                        <td>Very fast</td>
+                        <td>Normal</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h1>Medias</h1>
+            <h2>HTML(Hypertext Markup Language) Media:</h2>
+
+            <p>Used to embed content from another web page, often used for third-party media like YouTube videos by copying the embed code provided by the platform.</p>
+            
+            <h3>Images:</h3>
+            <figure>
+                <img src="moon.jpg" alt="moon-play" height="300" width="450" />
+                <figcaption>moon</figcaption>
+            </figure>
+
+            <figure>
+                <img src="Mountains.jpg" alt="moutains with clouds" height="300" width="450">
+                <figcaption>Mountains</figcaption>
+            </figure>
+
+            <h3>Videos</h3>
+            <p>HTML provides the
+<video> tag as the standard way to embed video content in a document. The tag allows you to specify video sources, control playback behavior, and include attributes for responsiveness and accessibility.</p>
+            
+            <video controls loop muted>
+                <source src="" alt="">
+            </video>
+
+            <iframe src="https://youtu.be/Xc8ZuxM5YIk?si=DzCApzA1gPdWbJaD" height="300" width="500"></iframe>
+
+        </section>
+
+
+
+
+
+
+    </main>
+
+    <footer>
+        <h2>Contact</h2>
+        <address>
+            <p>PAGUTAHRIVAN S</p>
+            <p>Full Stack Developer</p>
+            <p>Software Engineer</p>
+            <p>Data Engineer</p>
+            <p>624801</p>
+        </address>
+    </footer>
 
 </body>
 </html>
