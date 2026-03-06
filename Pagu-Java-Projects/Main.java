@@ -1,5 +1,3 @@
-public class Main {
-    void main() {
-        System.out.println("Hello, Pagu Welcome to the Java world");
-    }
+void main() {
+    System.out.println("Hello pagu welcome the world of Java");
 }
