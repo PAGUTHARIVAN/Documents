@@ -1,60 +1,71 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgb(33, 32, 32);
+body{
+    background-color: rgb(58, 58, 58);
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.598);
+    padding-bottom: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0px 4px 60px rgb(0, 0, 0);
+}
+
+.title {
+    background-color: rgb(40, 40, 40);
+    color: rgba(255, 255, 255, 0.876);
+    text-shadow: 0 2px 15px black;
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 40px;
+    border-bottom: 0.9px solid rgba(255, 255, 255, 0.137);
+}
+
+span {
+    color: rgb(0, 85, 255);
 }
 
 .navbar {
+    background-color: rgba(0, 0, 0, 0.463);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: 0.9px solid rgba(116, 115, 115, 0.212);
+}
+
+.links {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #0022f9;
-    padding: 1rem 2rem;
-    color: white;
-    box-shadow: black;
+    list-style: inside;
+    margin-left: 10px;
 }
 
-.navbar .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-}
-
-.nav-links a {
-    color: white;
+.links li {
     text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
+    list-style-type: none;
+    margin-left: 19px;
+    color: rgba(255, 255, 255, 0.587);
+    padding: 6px;
+    background-color: rgba(0, 0, 0, 0.148);
+    border-radius: 10px;
+    transition: ease 0.3s;
 }
 
-.nav-links a:hover {
-    color: #ff9800;
-}
-
-.round-btn {
-    font-size: 1rem;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border: none;
+.links li:hover {
+    color: rgb(209, 224, 253);
     cursor: pointer;
-    transition: background-color 0.3s ease transform 0.2s ease;
-    background-color: #02356f;
-    color: white;
-    border-radius: 50px;
-    padding: 0.6rem 1.6rem;
-}
-
-.round-btn:hover {
-    background-color: #0563fb;
-    transform: translateY(-2px);
-
+    background-color: rgba(25, 25, 151, 0.375);
+    box-shadow: 0 0px 5px rgb(123, 123, 255);
 }
