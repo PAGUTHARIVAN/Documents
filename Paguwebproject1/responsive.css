@@ -1,0 +1,62 @@
+.parent {
+    background-color: rgba(128, 128, 128, 0.228);
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 150px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 50px black;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.742);
+}
+.child-one {
+    background-color: red;
+    height: 300px;
+    width: 10%;
+    box-shadow: -5px 0px 10px black;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: ease 0.3s;
+}
+
+.child-one:hover {
+    background-color: rgb(253, 53, 53);
+}
+
+.child-two {
+    background-color: red;
+    height: 300px;
+    width: 10%;
+    box-shadow: -3px 0px 10px black;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.child-three {
+    background-color: red;
+    height: 300px;
+    width: 10%;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 10px;
+}
+
+.child-four {
+    background-color: red;
+    height: 300px;
+    width: 10%;
+    box-shadow: 3px 0px 10px black;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.child-five {
+    background-color: red;
+    height: 300px;
+    width: 10%;
+    box-shadow: 5px 0px 10px black;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
