@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(27, 27, 27);
+    background-color: rgb(254, 254, 254);
 }
 
 :is(button, a.button, input[type='submit'], input[type='reset']) {
@@ -40,7 +40,7 @@ button:not(.primary) {
 }
 
 .container .box li:first-child {
-    color:white
+    color:rgb(4, 73, 246)
 }
 
 .container .box li:last-child {
