@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(27, 27, 27);
+}
+
+:is(button, a.button, input[type='submit'], input[type='reset']) {
+    background-color: darkblue;
+    color: white;
+    border: 1px solid darkblue;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+:is(button, a.button, input[type='submit'], input[type='reset']):hover {
+    background-color: blue;
+    border-color: blue;
+}
+
+:where(h1, h2, h3, h4, h5, h6) {
+    margin: 0px;
+    padding: 0px;
+    color: blue;
+}
+
+article:has(h2) {
+    border: 1px solid black;
+}
+
+button.primary {
+    background-color: red;
+}
+
+button:not(.primary) {
+    background-color: grey;
+}
+
+.container .box li:first-child {
+    color:white
+}
+
+.container .box li:last-child {
+    color: red
+}
