@@ -1,35 +1,47 @@
-form {
-    background-color: grey;
-    color: white;
-    display: flex;
-    padding: 10px 20px;
-    border-radius: 10px;
-    margin-right: 440px;
+body {
+    background-color: #f9fafb;
+    color: #222;
+    padding: 2rem;
+}
+
+.accessible-form {
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    font-size: 1rem;
+    border: 2px solid #555;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #111;
+}
+
+input[type="text"]:focus {
+    outline:3px solid #1e90ff;
+    border-color: #1e90ff;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    background-color: #1e90ff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
 }
 
-
-form input[type="radio"] {
-    appearance: none;
-
-    width: 15px;
-    height: 15px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 50%;
-    display: grid;
-    place-content: center;
-}
-
-input[type="radio"]::before {
-    content:"";
-    width: 11px;
-    height: 11px;
-    background-color: blue;
-    border-radius: 50%;
-    transform: scale(0);
-    transition: transform 0.2s ease-in-out;
-}
-
-input[type="radio"]:checked::before {
-    transform: scale(1);
+button:hover,
+button:focus {
+    background-color: #187bcd;
 }
