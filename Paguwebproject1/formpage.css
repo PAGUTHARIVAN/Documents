@@ -1,47 +1,113 @@
 body {
-    background-color: #f9fafb;
-    color: #222;
-    padding: 2rem;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
-.accessible-form {
-    max-width: 320px;
-    margin: 0 auto;
+.container {
+    width: 600px;
+    margin: 15px auto;
+    padding: 20px 40px;
+    background-color: rgba(159, 157, 157, 0.259);
+    border-radius: 5px;
 }
 
-label {
+.title {
+    text-align: center;
+    color: white;
+    margin-top: 8px;
+}
+
+.title-quote {
+    color: white;
+    text-align: center;
+    font-style: italic;
+    border-bottom: 1px solid rgb(135, 135, 135);
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    background-color: rgba(35, 35, 35, 0.522);
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+fieldset {
+    padding: 20px 40px;
+    background-color: rgba(106, 104, 104, 0.522);
+    border-radius: 10px;
+    border-color: rgb(175, 174, 174);
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+legend {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 0 3px 10px 10px black;
+}
+
+label:not(.male, .female) {
     display: block;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
+    line-height: 3;
+    color: white;
+    margin: 8px auto;
+    font-weight: bold;
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+    background-color: rgba(0, 255, 255, 0.18);
+}
+
+input:not([type="radio"]) {
     width: 100%;
-    padding: 0.6rem 0.8rem;
-    font-size: 1rem;
-    border: 2px solid #555;
-    border-radius: 20px;
-    background-color: #fff;
-    color: #111;
-}
-
-input[type="text"]:focus {
-    outline:3px solid #1e90ff;
-    border-color: #1e90ff;
-}
-
-button {
-    margin-top: 1rem;
-    padding: 0.6rem 1rem;
-    font-size: 1rem;
-    background-color: #1e90ff;
-    color: #fff;
+    height: 25px;
+    padding: 5px 8px;
+    border-radius: 6px;
     border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    color: white;
+    font-size: 1rem;
 }
 
-button:hover,
-button:focus {
-    background-color: #187bcd;
+input[type="radio"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid white;
+    background-color: gray;
+    place-content: center;
+    transition: 0.2s ease;
+}
+
+input[type="radio"]:checked {
+    background-color: white;
+    border: 2px solid blue;
+}
+
+
+.btn {
+    border: none;
+    padding: 10px 20px;
+    background-color: aqua;
+    font-size: 1rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.form-container .btn {
+    display: block;
+    margin: 20px auto;
+}
+
+.btn:hover {
+    background-color: rgba(0, 255, 255, 0.707);
+    cursor: pointer;
 }

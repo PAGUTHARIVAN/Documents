@@ -3,15 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="formpage.css">
+    <title>Registration Form</title>
 </head>
 <body>
-    <form class="accessible-form">
-        <label for="username">Username</label>
-        <input type="text" id="username" name="username" placeholder="Enter your username" required>
-        <button type="submit">Submit</button>
-    </form>
+    <div class="container">
+        <h1 class="title">Registration Form</h1>
+        <p class="title-quote">Fill up this form for registration...</p>
+
+        <form class="form-container">
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="first-name">
+                    First Name: 
+                    <input type="text" id="first-name" name="first-name" placeholder="Enter Your First Name" required> <!--first name--->
+
+                </label>
+
+
+                <label for="last-name">
+                    Last Name: 
+                    <input type="text" id="last-name" name="last-name" placeholder="Enter Your Last Name" required> <!--last name--->
+
+                </label>
+
+
+                <label for="email">
+                    Email: 
+                    <input type="email" id="email" name="email" placeholder="Enter Your Email Id" required> <!--email--->
+
+                </label>
+
+
+                <label for="contact">
+                    Contact: 
+                    <input type="text" id="contact" name="contact" placeholder="Enter Your Contact" required> <!--contact number--->
+
+                </label>
+
+
+                <label for="gender" class="gen">
+                    Gender: 
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male" class="male">Male</label> <!--male-->
+
+                    <input type="radio" id="female" name="gender" value="female" required> <!--female-->
+                    <label for="female" class="female">Female</label>
+                </label>
+
+
+                <label for="age">
+                    Age: 
+                    <input type="number" id="age" name="age" placeholder="Enter Your Age" required> <!--age--->
+
+                </label>
+
+
+                <label for="password">
+                    Password:
+                    <input type="password" id="password" name="password" placeholder="Enter Valid Password"> <!--password--->
+
+                </label>
+
+            </fieldset>
+
+            <button type="submit" class="btn">Submit</button>
+
+
+            
+
+        </form>
+    </div>
     
 </body>
 </html>
