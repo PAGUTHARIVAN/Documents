@@ -5,57 +5,71 @@
 }
 
 body {
-    height: 100vh;
-    width: 100vw;
+    background-color: rgb(1, 1, 106);
+    color: rgb(7, 7, 7);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /*Grid-propertice*/
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.grid-container {
+    margin: 60px auto;
     display: grid;
+    width: 110vh;
+    height: 60vh;
     gap: 10px;
+    background-color: rgb(1, 1, 106);
     grid-template-areas: 
-    "header header header"
-    "nav nav nav"
-    "aside content content"
-    "aside section section"
-    "footer footer footer";
-
-    grid-template-rows: 60px 60px 1fr 1fr 60px;
-    grid-template-columns: 300px 1fr 1fr;
+    "box1 box2 box2 box3"
+    "box1 box4 box5 box6"
+    "box1 box7 box8 box6";
 }
 
-.header,
-.nav,
-.aside,
-.content,
-.section,
-.footer {
-    border: 1px solid rgb(253, 252, 252);
-    padding: 10px;
-    background-color: gray;
-    color: white;
+.grid-item {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.header {
-    grid-area: header;
-    background-color: rgb(1, 179, 179);
+.item-1 {
+    background-color: rgb(4, 197, 4);
+    grid-area: box1;
 }
-.nav {
-    grid-area: nav;
-    background-color: rgb(2, 221, 2);
-}
-.aside {
-    grid-area: aside;
-    background-color: rgb(98, 255, 98);
-}
-.content {
-    grid-area: content;
-    background-color: rgb(116, 116, 250);
 
+.item-2 {
+    background-color: rgb(4, 197, 4);
+    grid-area: box2;
 }
-.section {
-    grid-area: section;
-    background-color: rgb(2, 2, 163);
+.item-3 {
+    background-color: red;
+    grid-area: box3;
 }
-.footer {
-    grid-area: footer;
-    background-color: rgb(1, 179, 179);
+
+.item-4 {
+    background-color: yellow;
+    grid-area: box4;
+}
+.item-5 {
+    background-color: red;
+    grid-area: box5;
+}
+.item-6 {
+    background-color: rgb(4, 197, 4);
+    grid-area: box6;
+}
+.item-7 {
+    background-color: red;
+    grid-area: box7;
+}
+.item-8 {
+    background-color: yellow;
+    grid-area: box8;
 }
