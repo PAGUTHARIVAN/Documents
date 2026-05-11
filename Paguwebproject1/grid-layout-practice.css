@@ -1,66 +1,61 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
     height: 100vh;
     width: 100vw;
-    font-size: 1.3rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
-
-    /*grid-properties*/
+    /*Grid-propertice*/
     display: grid;
-    gap: 5px;
+    gap: 10px;
     grid-template-areas: 
-    "head head head"
+    "header header header"
     "nav nav nav"
-    "content1 main content2"
+    "aside content content"
+    "aside section section"
     "footer footer footer";
 
-    grid-template-columns: 250px 1fr 250px;
-    grid-template-rows: 80px 80px 1fr 80px ;
-
+    grid-template-rows: 60px 60px 1fr 1fr 60px;
+    grid-template-columns: 300px 1fr 1fr;
 }
 
 .header,
 .nav,
-.content1,
-.main,
-.content2,
+.aside,
+.content,
+.section,
 .footer {
-    border: 1px solid rgb(7, 7, 7);
-    background-color: green;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(8, 8, 8);
+    border: 1px solid rgb(253, 252, 252);
+    padding: 10px;
+    background-color: gray;
+    color: white;
 }
 
 .header {
-    grid-area: head;
-    background-color: rgb(0, 179, 255);
+    grid-area: header;
+    background-color: rgb(1, 179, 179);
 }
 .nav {
     grid-area: nav;
-    background-color: rgb(124, 252, 124);
+    background-color: rgb(2, 221, 2);
+}
+.aside {
+    grid-area: aside;
+    background-color: rgb(98, 255, 98);
+}
+.content {
+    grid-area: content;
+    background-color: rgb(116, 116, 250);
+
+}
+.section {
+    grid-area: section;
+    background-color: rgb(2, 2, 163);
 }
 .footer {
     grid-area: footer;
-    background-color: rgb(0, 179, 255);
-}
-
-.content1 {
-    grid-area: content1;
-    background-color: rgb(248, 230, 99);
-}
-.main {
-    grid-area: main;
-    background-color: rgb(248, 230, 99);
-}
-.content2 {
-    grid-area: content2;
-    background-color: rgb(248, 230, 99);
+    background-color: rgb(1, 179, 179);
 }
